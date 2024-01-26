@@ -10,6 +10,9 @@
 
 @layer base {
   body {
-    @apply bg-[#030014] text-white mx-auto sm:max-w-xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl;
+    @apply
+     /* bg-[#030014] */
+     bg-slate-900
+     text-white mx-auto sm:max-w-xl md:max-w-4xl lg:max-w-5xl xl:max-w-6xl;
   }
 }

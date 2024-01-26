@@ -1,16 +1,17 @@
 import React from "react";
-
-// icon
 import {
   HiHome,
   HiUser,
   HiViewColumns,
   HiRectangleGroup,
   HiEnvelope,
+  HiPhone,
 } from "react-icons/hi2";
+import { IoMdMail } from "react-icons/io";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { MdWork, MdOutlineWhatsapp } from "react-icons/md";
-import { RiInstagramLine, RiLinkedinLine, RiTwitterLine } from "react-icons/ri";
+import { RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
+import { FaLocationDot } from "react-icons/fa6";
 import { RxDiscordLogo } from "react-icons/rx";
 
 export const links = [
@@ -71,5 +72,20 @@ export const socialMedia = [
     name: "whatsapp",
     icon: React.createElement(MdOutlineWhatsapp),
     href: "https://api.whatsapp.com/send?phone=989916937150",
+  },
+] as const;
+
+export const personalData = [
+  {
+    icon: React.createElement(HiPhone),
+    info: "+98 991 693 7150",
+  },
+  {
+    icon: React.createElement(IoMdMail),
+    info: "im1.bitcode@gmail.com",
+  },
+  {
+    icon: React.createElement(FaLocationDot),
+    info: "Iran, Kerman",
   },
 ] as const;

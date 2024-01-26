@@ -1,6 +1,9 @@
+import Intro from "@/components/Intro";
+
 export default function Home() {
   return (
-    <main className="text-center flex gap-5 h-screen">
+    <main className="flex flex-col items-center px-10">
+      <Intro />
     </main>
   );
 }
