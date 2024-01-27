@@ -28,7 +28,7 @@ const Navbar = () => {
             >
               <Link
                 className={clsx(
-                  "flex lg:w-full w-9 h-9 items-center justify-center px-3 py-3 transition text-gray-400 hover:text-gray-200",
+                  "flex lg:w-auto w-10 h-10 items-center justify-center px-3 py-3 transition text-gray-400 hover:text-gray-200",
                   {
                     "text-gray-100": activeSection === link.name,
                   }

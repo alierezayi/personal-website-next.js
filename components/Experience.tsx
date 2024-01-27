@@ -3,7 +3,7 @@
 import { useSectionInView } from "@/hooks/useSectionInView";
 
 const Experience = () => {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("Experience");
 
   return (
     <div id="experience" ref={ref} className="text-center min-h-[700px]">

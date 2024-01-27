@@ -89,3 +89,74 @@ export const personalData = [
     info: "Iran, Kerman",
   },
 ] as const;
+
+export const skillsData = [
+  {
+    name: "HTML",
+    image: "/image/html.png",
+  },
+  {
+    name: "CSS",
+    image: "/image/css.png",
+  },
+  {
+    name: "JavaScript",
+    image: "/image/javascript.png",
+  },
+  {
+    name: "React",
+    image: "/image/react.png",
+  },
+  {
+    name: "TypeScript",
+    image: "/image/typescript.png",
+  },
+  {
+    name: "Next.js",
+    image: "/image/nextjs.png",
+  },
+  {
+    name: "TailwindCSS",
+    image: "/image/tailwind-css.png",
+  },
+  {
+    name: "SCSS",
+    image: "/image/sass.png",
+  },
+  {
+    name: "MaterialUI",
+    image: "/image/material-ui.png",
+  },
+  {
+    name: "Swiper",
+    image: "/image/swiper.svg",
+  },
+  {
+    name: "Git",
+    image: "/image/git.png",
+  },
+  {
+    name: "Redux(Toolkit)",
+    image: "/image/redux.png",
+  },
+  {
+    name: "Framer Motion",
+    image: "/image/framer-motion.svg",
+  },
+  {
+    name: "Zustand",
+    image: "/image/bear.png",
+  },
+  {
+    name: "Chart.js",
+    image: "/image/chartjs.svg",
+  },
+  {
+    name: "Styled Components",
+    image: "/image/file-type-styled.svg",
+  },
+  {
+    name: "Shadcn/ui",
+    image: "/image/shadcnui.png",
+  },
+] as const;

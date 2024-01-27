@@ -35,7 +35,7 @@ const Content = () => {
       <motion.h2
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}
-        className="text-2xl font-semibold !leading-[1.5] sm:text-4xl text-sky-400"
+        className="text-2xl font-semibold !leading-[1.5] sm:text-4xl bg-gradient-to-r from-blue-600  to-yellow-400 inline-block text-transparent bg-clip-text"
       >
         Ali Rezaei
       </motion.h2>
