@@ -11,7 +11,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Intro = () => {
   return (
-    <section className="w-full relative flex flex-col items-center lg:flex-row scroll-mt-[100rem] my-5 lg:my-20">
+    <section className="w-full relative flex flex-col items-center lg:flex-row scroll-mt-[100rem] my-10 lg:my-20">
       <ParticlesPattern />
       <MobileAvatar />
       <Content />
@@ -28,9 +28,9 @@ const Content = () => {
       <motion.h2
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}
-        className="text-xl font-semibold !leading-[1.5] sm:text-4xl text-[#a40e4c]"
+        className="text-2xl font-semibold !leading-[1.5] sm:text-4xl text-sky-400"
       >
-        Ali Rezayi
+        Ali Rezaei
       </motion.h2>
 
       <motion.div
@@ -45,7 +45,7 @@ const Content = () => {
             "Web developer",
             "Front-End developer",
           ]}
-          typeSpeed={50}
+          typeSpeed={60}
           backSpeed={40}
           className="text-white text-3xl font-medium !leading-[1.5] sm:text-5xl"
           loop

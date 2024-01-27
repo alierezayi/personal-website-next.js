@@ -32,8 +32,8 @@ const Navbar = () => {
                 )}
                 href={link.hash}
               >
-                <span className="inline lg:hidden text-xl z-10">{link.icon}</span>
-                <span className="hidden lg:inline z-10">{link.name}</span>
+                <span className="inline xl:hidden text-xl z-10">{link.icon}</span>
+                <span className="hidden xl:inline z-10">{link.name}</span>
 
                 {link.name === "Home" && (
                   <motion.span
