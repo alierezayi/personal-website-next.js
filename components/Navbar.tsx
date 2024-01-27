@@ -4,8 +4,12 @@ import Link from "next/link";
 import clsx from "clsx";
 import { motion } from "framer-motion";
 import { links } from "@/lib/constants";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 const Navbar = () => {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+
   return (
     <div className="z-[999] fixed top-5 lg:top-[36px] left-1/2 -translate-x-1/2 px-4 h-[52px] flex items-center">
       <motion.div
@@ -24,18 +28,23 @@ const Navbar = () => {
             >
               <Link
                 className={clsx(
-                  "flex lg:w-full w-9 h-9 items-center justify-center px-3 py-3 transition text-gray-400 hover:text-gray-200"
-                  ,{
-                    "text-gray-100":
-                      "Home" === link.name,
+                  "flex lg:w-full w-9 h-9 items-center justify-center px-3 py-3 transition text-gray-400 hover:text-gray-200",
+                  {
+                    "text-gray-100": activeSection === link.name,
                   }
                 )}
                 href={link.hash}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
-                <span className="inline xl:hidden text-xl z-10">{link.icon}</span>
+                <span className="inline xl:hidden text-xl z-10">
+                  {link.icon}
+                </span>
                 <span className="hidden xl:inline z-10">{link.name}</span>
 
-                {link.name === "Home" && (
+                {link.name === activeSection && (
                   <motion.span
                     className="rounded-full absolute inset-0 z-0 bg-slate-100/10"
                     layoutId="activeSection"

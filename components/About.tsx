@@ -3,10 +3,15 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionHeading from "./SectionHeading";
+import { useSectionInView } from "@/hooks/useSectionInView";
 
 const About = () => {
+  const { ref } = useSectionInView("Home", 0.5);
+
   return (
     <motion.section
+      ref={ref}
+      id="about"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
