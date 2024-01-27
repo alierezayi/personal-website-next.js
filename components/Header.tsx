@@ -6,7 +6,7 @@ import Socials from "./Socials";
 
 const Header = () => {
   return (
-    <header className="pb-5 px-2 flex flex-col lg:flex-row justify-between items-center pt-28 gap-8 lg:pt-12 lg:gap-0">
+    <header className="pb-5 px-2 flex flex-col lg:flex-row justify-between items-center pt-28 gap-8 lg:pt-12 lg:gap-0 lg:mb-10">
       <Logo />
       <Socials />
     </header>

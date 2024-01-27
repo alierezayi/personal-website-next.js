@@ -19,7 +19,6 @@ const Intro = () => {
       id="home"
       className="w-full relative flex flex-col items-center lg:flex-row scroll-mt-[100rem] my-10 lg:my-20"
     >
-      <ParticlesPattern />
       <MobileAvatar />
       <Content />
       <Avatar />
@@ -35,13 +34,13 @@ const Content = () => {
       <motion.h2
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}
-        className="text-2xl font-semibold !leading-[1.5] sm:text-4xl bg-gradient-to-r from-blue-600  to-yellow-400 inline-block text-transparent bg-clip-text"
+        className="text-2xl font-semibold !leading-[1.5] sm:text-4xl bg-gradient-to-r from-[#a40e4c] to-blue-600 inline-block text-transparent bg-clip-text"
       >
         Ali Rezaei
       </motion.h2>
 
       <motion.div
-        className="mb-10 mt-2"
+        className="mb-10 lg:mb-12 mt-2"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
       >
@@ -62,7 +61,7 @@ const Content = () => {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="flex gap-5 justify-center lg:justify-start w-full mb-12"
+        className="flex gap-5 justify-center lg:justify-start w-full mb-12 lg:mb-14"
       >
         <Link
           className="group h-12 px-7 py-3 flex font-medium items-center gap-2 z-10 rounded-full  outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack bg-white/10"

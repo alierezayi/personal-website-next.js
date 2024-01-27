@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import ParticlesPattern from "@/components/Particles";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={inter.className}>
         <ActiveSectionContextProvider>
+          <ParticlesPattern />
           <Header />
           <Navbar />
           {children}

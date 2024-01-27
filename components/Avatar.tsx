@@ -8,18 +8,17 @@ export default function Avatar() {
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         type: "tween",
-        duration: 0.2,
+        duration: 0.4,
       }}
-      className="hidden lg:flex relative"
+      className="hidden lg:flex relative rounded-full w-[350px] h-[350px] overflow-hidden"
     >
       <Image
-        src={"/image/avatar.png"}
-        width={500}
+        src={"/image/alirezayi-mobile.jpg"}
+        width={400}
         height={400}
         alt=""
-        className=""
+        className="w-full h-full"
       />
-      <div className="absolute inset-x-0 bottom-0 w-full h-1/3 bg-gradient-to-t from-slate-900 to-transparent" />
     </motion.div>
   );
 }
@@ -36,7 +35,7 @@ export const MobileAvatar = () => {
       className="lg:hidden w-[180px] h-[180px] rounded-full bg-slate-700 overflow-hidden mb-10"
     >
       <Image
-        src={"/image/avatar.png"}
+        src={"/image/alirezayi-mobile.jpg"}
         width={300}
         height={200}
         alt=""
