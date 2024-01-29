@@ -1,11 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useTransform, useViewportScroll } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { personalData } from "@/lib/constants";
 import Avatar, { MobileAvatar } from "./Avatar";
-import ParticlesPattern from "./Particles";
 import { HiDownload } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { useSectionInView } from "@/hooks/useSectionInView";
@@ -14,7 +13,7 @@ const Intro = () => {
   const { ref } = useSectionInView("Home", 0.5);
 
   return (
-    <section
+    <motion.section
       ref={ref}
       id="home"
       className="w-full relative flex flex-col items-center lg:flex-row scroll-mt-[100rem] my-10 lg:my-20"
@@ -22,7 +21,7 @@ const Intro = () => {
       <MobileAvatar />
       <Content />
       <Avatar />
-    </section>
+    </motion.section>
   );
 };
 

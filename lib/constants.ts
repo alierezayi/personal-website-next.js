@@ -104,12 +104,12 @@ export const skillsData = [
     image: "/image/javascript.png",
   },
   {
-    name: "React",
-    image: "/image/react.png",
-  },
-  {
     name: "TypeScript",
     image: "/image/typescript.png",
+  },
+  {
+    name: "React",
+    image: "/image/react.png",
   },
   {
     name: "Next.js",
@@ -140,7 +140,7 @@ export const skillsData = [
     image: "/image/redux.png",
   },
   {
-    name: "Framer Motion",
+    name: "Framer",
     image: "/image/framer-motion.svg",
   },
   {
@@ -152,11 +152,50 @@ export const skillsData = [
     image: "/image/chartjs.svg",
   },
   {
+    name: "Shadcn/ui",
+    image: "/image/shadcnui.png",
+  },
+  {
     name: "Styled Components",
     image: "/image/file-type-styled.svg",
   },
+] as const;
+
+export const projectsData = [
   {
-    name: "Shadcn/ui",
-    image: "/image/shadcnui.png",
+    title: "Music Player",
+    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Supabase", "Zustand"],
+    imageUrl: "/image/music-player.png",
+    deployment: "https://music-player-alirezayi.vercel.app",
+    source: "https://github.com/alierezayi/Music-Player",
+  },
+  {
+    title: "Weblog",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Tailwind",
+      "Prisma",
+      "MongoDB",
+      "swr",
+    ],
+    imageUrl: "/image/weblog.png",
+    deployment: "https://weblog-alirezayi.vercel.app",
+    source: "https://github.com/alierezayi/Weblog",
+  },
+  {
+    title: "Admin Dashboard",
+    tags: ["React", "TypeScript", "Next.js", "Material UI", "Next Auth"],
+    imageUrl: "/image/admin-dashboard.png",
+    deployment: "https://admin-dashboard-alirezayi.vercel.app",
+    source: "https://github.com/alierezayi/Admin-Dashboard",
+  },
+  {
+    title: "Shopping Cart",
+    tags: ["React", "Next.js", "Tailwind", "Redux", "Next Auth", "Headless UI"],
+    imageUrl: "/image/fullstack-shopping-cart.png",
+    deployment: "https://fullstack-shopping-cart-alirezayi.vercel.app",
+    source: "https://github.com/alierezayi/fullstack-shopping-cart",
   },
 ] as const;

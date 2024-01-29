@@ -31,10 +31,10 @@ const Skills = () => {
     >
       <SectionHeading>my skills</SectionHeading>
 
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 max-w-4xl mx-auto">
+      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 text-lg text-gray-800 max-w-4xl mx-auto mt-5 lg:mt-16">
         {skillsData.map((skill, i) => (
           <motion.li
-            className="rounded-xl px-5 py-3.5 bg-white/10 text-white/80 flex gap-2"
+            className="rounded-xl px-5 py-3.5 bg-slate-700/90 text-white/80 flex justify-center items-center text-sm gap-3"
             key={i}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -44,7 +44,7 @@ const Skills = () => {
             }}
             custom={i}
           >
-            <Image src={skill.image} width={25} height={25} alt="" />
+            <Image src={skill.image} width={25} height={23} alt="" />
             {skill.name}
           </motion.li>
         ))}
