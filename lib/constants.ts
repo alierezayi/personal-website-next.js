@@ -205,6 +205,7 @@ export const experiencesData = [
       "After 3 years of study, I received a diploma in mathematics at Dr. Ali Shariati's High school.",
     icon: React.createElement(LuBookOpen),
     date: "2018 - 2021",
+    type: "Educational"
   },
   {
     title: "Bachelor of Computer Engineering",
@@ -213,13 +214,6 @@ export const experiencesData = [
       "I am currently a computer engineering student at the non-profit Besat University of Kerman.  I am self-taught in the field of software engineering and learning programming",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - present",
-  },
-  {
-    title: "Bachelor of Computer Engineering",
-    location: "Kerman, IR",
-    description:
-      "I am currently a computer engineering student at the non-profit Besat University of Kerman.  I am self-taught in the field of software engineering and learning programming",
-    icon: React.createElement(LuGraduationCap),
-    date: "2022 - present",
+    type: "Educational"
   },
 ] as const;
