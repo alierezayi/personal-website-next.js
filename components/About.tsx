@@ -15,7 +15,7 @@ const About = () => {
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="my-10 lg:my-20 scroll-mt-28"
+      className="my-10 scroll-mt-28"
     >
       <SectionHeading>about me</SectionHeading>
 
