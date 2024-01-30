@@ -32,7 +32,7 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group border border-black/5 rounded-xl overflow-hidden relative transition text-white bg-slate-700 pt-7 pb-7 px-5 flex flex-col gap-10 max-w-xl"
+      className="group border border-black/5 rounded-xl overflow-hidden relative transition text-white bg-gray-700 pt-7 pb-7 px-5 flex flex-col gap-10 max-w-xl"
     >
       <Image
         width={400}
@@ -63,7 +63,7 @@ export default function Project({
               <Link
                 href={deployment}
                 target="_blank"
-                className="text-xs truncate text-white/90"
+                className="text-xs truncate text-white/90 underline"
               >
                 {deployment}
               </Link>
@@ -77,7 +77,7 @@ export default function Project({
               <Link
                 href={source}
                 target="_blank"
-                className="text-xs truncate text-white/90"
+                className="text-xs truncate text-white/90 underline"
               >
                 {source}
               </Link>

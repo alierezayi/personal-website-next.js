@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useTransform, useViewportScroll } from "framer-motion";
+import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { personalData } from "@/lib/constants";
 import Avatar, { MobileAvatar } from "./Avatar";
