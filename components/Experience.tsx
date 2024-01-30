@@ -1,15 +1,53 @@
 "use client";
 
+import React from "react";
+import SectionHeading from "./SectionHeading";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { experiencesData } from "@/lib/constants";
 import { useSectionInView } from "@/hooks/useSectionInView";
 
-const Experience = () => {
+export default function Experience() {
   const { ref } = useSectionInView("Experience");
 
   return (
-    <div id="experience" ref={ref} className="text-center min-h-[700px]">
-      Experience
-    </div>
+    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+      <SectionHeading>My experience</SectionHeading>
+      <VerticalTimeline lineColor="">
+        {experiencesData.map((item, index) => (
+          <React.Fragment key={index}>
+            <VerticalTimelineElement
+              contentStyle={{
+                background: "#1e293b",
+                boxShadow: "none",
+                border: "1px solid rgba(0, 0, 0, 0.05)",
+                textAlign: "left",
+                padding: "1.3rem 2rem",
+                borderRadius: "12px",
+                position: "relative",
+              }}
+              contentArrowStyle={{
+                borderRight: "0.4rem solid rgba(255, 255, 255, 0.5)",
+              }}
+              date={item.date}
+              icon={item.icon}
+              iconStyle={{
+                background: "#64748b",
+                fontSize: "1.5rem",
+              }}
+            >
+              <h3 className="font-semibold capitalize rounded">{item.title}</h3>
+              <p className="font-normal !mt-0 !text-sm">{item.location}</p>
+              <p className="!mt-4 !font-normal text-white/60">
+                {item.description}
+              </p>
+            </VerticalTimelineElement>
+          </React.Fragment>
+        ))}
+      </VerticalTimeline>
+    </section>
   );
-};
-
-export default Experience;
+}

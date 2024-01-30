@@ -31,7 +31,7 @@ const Skills = () => {
     >
       <SectionHeading>my skills</SectionHeading>
 
-      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2 text-lg text-gray-800 max-w-4xl mx-auto mt-5 lg:mt-16">
+      <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 text-lg text-gray-800 max-w-4xl mx-auto mt-5 lg:mt-16">
         {skillsData.map((skill, i) => (
           <motion.li
             className="rounded-xl px-5 py-3.5 bg-slate-700/90 text-white/80 flex justify-center items-center text-sm gap-3"

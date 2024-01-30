@@ -32,7 +32,7 @@ export default function Project({
         scale: scaleProgress,
         opacity: opacityProgress,
       }}
-      className="group border border-black/5 rounded-xl overflow-hidden relative transition text-white bg-gray-700 pt-4 pb-7 px-5 sm:pt-7 flex flex-col gap-10 max-w-xl"
+      className="group border border-black/5 rounded-xl overflow-hidden relative transition text-white bg-slate-700 pt-7 pb-7 px-5 flex flex-col gap-10 max-w-xl"
     >
       <Image
         width={400}
@@ -44,7 +44,7 @@ export default function Project({
       <div className="flex flex-col justify-between h-full">
         <h3 className="text-2xl font-semibold">{title}</h3>
 
-        <ul className="flex flex-wrap my-5 gap-2">
+        <ul className="flex flex-wrap mt-5 mb-8 gap-2">
           {tags.map((tag, index) => (
             <li
               className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
@@ -63,7 +63,7 @@ export default function Project({
               <Link
                 href={deployment}
                 target="_blank"
-                className="text-xs underline truncate"
+                className="text-xs truncate text-white/90"
               >
                 {deployment}
               </Link>
@@ -77,7 +77,7 @@ export default function Project({
               <Link
                 href={source}
                 target="_blank"
-                className="text-xs underline truncate"
+                className="text-xs truncate text-white/90"
               >
                 {source}
               </Link>

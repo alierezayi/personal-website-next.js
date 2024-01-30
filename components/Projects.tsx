@@ -13,10 +13,11 @@ const Projects = () => {
     <section
       id="projects"
       ref={ref}
-      className="w-full scroll-mt-28 my-10 lg:my-20"
+      className="scroll-mt-28 my-10 lg:my-20"
     >
       <SectionHeading>my projects</SectionHeading>
-      <div className="flex flex-col items-center gap-5">
+
+      <div className="flex flex-col items-center gap-10">
         {projectsData.map((project, i) => (
           <React.Fragment key={i}>
             <Project {...project} />

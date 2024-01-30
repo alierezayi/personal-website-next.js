@@ -13,6 +13,7 @@ import { MdWork, MdOutlineWhatsapp } from "react-icons/md";
 import { RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
 import { FaLocationDot } from "react-icons/fa6";
 import { RxDiscordLogo } from "react-icons/rx";
+import { LuBookOpen, LuGraduationCap } from "react-icons/lu";
 
 export const links = [
   {
@@ -155,10 +156,6 @@ export const skillsData = [
     name: "Shadcn/ui",
     image: "/image/shadcnui.png",
   },
-  {
-    name: "Styled Components",
-    image: "/image/file-type-styled.svg",
-  },
 ] as const;
 
 export const projectsData = [
@@ -197,5 +194,32 @@ export const projectsData = [
     imageUrl: "/image/fullstack-shopping-cart.png",
     deployment: "https://fullstack-shopping-cart-alirezayi.vercel.app",
     source: "https://github.com/alierezayi/fullstack-shopping-cart",
+  },
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Diploma in Mathematics",
+    location: "Kerman, IR",
+    description:
+      "After 3 years of study, I received a diploma in mathematics at Dr. Ali Shariati's High school.",
+    icon: React.createElement(LuBookOpen),
+    date: "2018 - 2021",
+  },
+  {
+    title: "Bachelor of Computer Engineering",
+    location: "Kerman, IR",
+    description:
+      "I am currently a computer engineering student at the non-profit Besat University of Kerman.  I am self-taught in the field of software engineering and learning programming",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - present",
+  },
+  {
+    title: "Bachelor of Computer Engineering",
+    location: "Kerman, IR",
+    description:
+      "I am currently a computer engineering student at the non-profit Besat University of Kerman.  I am self-taught in the field of software engineering and learning programming",
+    icon: React.createElement(LuGraduationCap),
+    date: "2022 - present",
   },
 ] as const;
