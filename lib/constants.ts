@@ -11,7 +11,7 @@ import { IoMdMail } from "react-icons/io";
 import { LiaTelegramPlane } from "react-icons/lia";
 import { MdWork, MdOutlineWhatsapp } from "react-icons/md";
 import { RiInstagramLine, RiLinkedinLine } from "react-icons/ri";
-import { FaLocationDot } from "react-icons/fa6";
+import { FaLocationDot, FaRegStar } from "react-icons/fa6";
 import { RxDiscordLogo } from "react-icons/rx";
 import { LuBookOpen, LuGraduationCap } from "react-icons/lu";
 
@@ -205,7 +205,6 @@ export const experiencesData = [
       "After 3 years of study, I received a diploma in mathematics at Dr. Ali Shariati's High school.",
     icon: React.createElement(LuBookOpen),
     date: "2018 - 2021",
-    type: "Educational"
   },
   {
     title: "Bachelor of Computer Engineering",
@@ -214,6 +213,12 @@ export const experiencesData = [
       "I am currently a computer engineering student at the non-profit Besat University of Kerman.  I am self-taught in the field of software engineering and learning programming",
     icon: React.createElement(LuGraduationCap),
     date: "2022 - present",
-    type: "Educational"
+  },
+  {
+    title: "",
+    location: "",
+    description: "",
+    icon: React.createElement(FaRegStar),
+    date: "",
   },
 ] as const;
