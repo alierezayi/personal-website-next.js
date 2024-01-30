@@ -29,9 +29,9 @@ export default function Experience() {
                 borderRadius: "12px",
                 position: "relative",
               }}
-              // contentArrowStyle={{
-              //   borderRight: "0.4rem solid rgba(255, 255, 255, 0.5)",
-              // }}
+              contentArrowStyle={{
+                borderRight: "0.4rem solid rgb(255, 255, 255)",
+              }}
               date={item.date}
               icon={item.icon}
               iconStyle={{
