@@ -32,7 +32,7 @@ export default function Project({
       //   scale: scaleProgress,
       //   opacity: opacityProgress,
       // }}
-      className="group border border-black/5 rounded-xl overflow-hidden relative transition text-white bg-gray-700 pt-7 pb-7 px-5 flex flex-col gap-10 max-w-xl"
+      className="group border border-black/5 rounded-xl overflow-hidden relative transition text-white bg-gray-700/90 pt-7 pb-7 px-5 flex flex-col gap-10 max-w-xl"
     >
       <Image
         width={400}

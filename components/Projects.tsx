@@ -17,7 +17,7 @@ const Projects = () => {
     >
       <SectionHeading>my projects</SectionHeading>
 
-      <div className="grid lg:grid-cols-2 gap-10">
+      <div className="grid lg:grid-cols-2 gap-10 mt-5 lg:mt-16 lg:w-[90%] mx-auto">
         {projectsData.map((project, i) => (
           <React.Fragment key={i}>
             <Project {...project} />
