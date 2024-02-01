@@ -15,7 +15,7 @@ const Navbar = () => {
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="absolute inset-0 w-full border border-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full bg-slate-900 border-slate-700/30 bg-opacity-70"
+        className="absolute inset-0 w-full border border-opacity-40 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] rounded-full bg-gray-950 border-slate-700/30 bg-opacity-70"
       />
       <nav className="flex justify-center h-12">
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap gap-5">
