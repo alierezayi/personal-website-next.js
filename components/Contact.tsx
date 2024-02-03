@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/hooks/useSectionInView";
 import SectionHeading from "./SectionHeading";
 import SubmitButton from "./SubmitButton";
+import { sendEmail } from "@/actions/sendEmail";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
@@ -46,12 +47,22 @@ const Form = () => {
   return (
     <form
       className="flex flex-col gap-5 w-full max-w-xl mt-5"
-      
+      action={async (formData) => {
+        const { data, error } = await sendEmail(formData);
+
+        if (error) {
+          console.log(error);
+          error;
+          return;
+        }
+
+        console.log("Email sent successfully!");
+      }}
     >
       <input
         className="w-full py-3 px-2 border rounded-xl outline-none bg-gray-950/95 border-gray-800 hover:border-gray-700 transition"
         type="text"
-        name="email"
+        name="senderEmail"
         placeholder="Email Adress"
         required
         maxLength={500}
@@ -59,6 +70,7 @@ const Form = () => {
 
       <textarea
         className="w-full py-3 px-2 border rounded-xl outline-none min-h-[200px] bg-gray-950/95 border-gray-800 hover:border-gray-700 transition"
+        name="message"
         placeholder="Message"
         required
         maxLength={5000}
