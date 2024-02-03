@@ -5,6 +5,7 @@ import { useSectionInView } from "@/hooks/useSectionInView";
 import SectionHeading from "./SectionHeading";
 import SubmitButton from "./SubmitButton";
 import { sendEmail } from "@/actions/sendEmail";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact");
@@ -25,7 +26,7 @@ const Contact = () => {
       }}
       id="contact"
       ref={ref}
-      className="scroll-mt-28 my-10 w-full flex flex-col items-center"
+      className="scroll-mt-28 my-10 w-full flex flex-col items-center mb-20 sm:mb-28"
     >
       <SectionHeading>Contact Me</SectionHeading>
 
@@ -51,12 +52,11 @@ const Form = () => {
         const { data, error } = await sendEmail(formData);
 
         if (error) {
-          console.log(error);
-          error;
+          toast.error(error);
           return;
         }
 
-        console.log("Email sent successfully!");
+        toast.success("Email sent successfully!");
       }}
     >
       <input
