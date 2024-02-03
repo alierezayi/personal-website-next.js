@@ -28,10 +28,16 @@ export default function Project({
   return (
     <motion.section
       ref={ref}
-      // style={{
-      //   scale: scaleProgress,
-      //   opacity: opacityProgress,
-      // }}
+      initial={{
+        opacity: 0,
+      }}
+      whileInView={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: 1,
+        ease: "linear",
+      }}
       className="group border border-black/5 rounded-xl overflow-hidden relative transition text-white bg-gray-700/90 pt-7 pb-7 px-5 flex flex-col gap-10 max-w-xl"
     >
       <Image
