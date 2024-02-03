@@ -14,8 +14,13 @@ export default function Experience() {
   const { ref } = useSectionInView("Experience");
 
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mt-10 mb-20 lg:mb-36">
+    <section
+      id="experience"
+      ref={ref}
+      className="scroll-mt-28 mt-10 mb-20 lg:mb-36"
+    >
       <SectionHeading>My experience</SectionHeading>
+
       <VerticalTimeline lineColor="#e5e7eb3e">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
@@ -42,6 +47,7 @@ export default function Experience() {
                 <h3 className="font-semibold capitalize rounded">
                   {item.title}
                 </h3>
+
                 <p className="font-normal !mt-1 !text-sm">{item.location}</p>
                 <p className="!mt-5 !font-normal text-gray-300">
                   {item.description}

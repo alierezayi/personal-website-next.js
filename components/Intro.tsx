@@ -96,7 +96,7 @@ const Content = () => {
             },
           },
         }}
-        className="flex flex-col sm:flex-row gap-7 w-full sm:w-auto"
+        className="flex flex-col sm:flex-row gap-7 w-full sm:w-auto px-2"
       >
         {personalData.map((item, i) => (
           <motion.div
