@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import ParticlesPattern from "@/components/Particles";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +24,12 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={inter.className}>
         <ActiveSectionContextProvider>
+          {/* <ParticlesPattern /> */}
           <Header />
           <Navbar />
           {children}
           <Footer />
+          <Toaster position="top-right" />
         </ActiveSectionContextProvider>
       </body>
     </html>
