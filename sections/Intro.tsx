@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
 import { personalData } from "@/lib/constants";
-import Avatar, { MobileAvatar } from "./Avatar";
+import Avatar, { MobileAvatar } from "../Avatar";
 import { HiDownload } from "react-icons/hi";
 import { FaGithub } from "react-icons/fa";
 import { useSectionInView } from "@/hooks/useSectionInView";

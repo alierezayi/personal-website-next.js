@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/hooks/useSectionInView";
-import SectionHeading from "./SectionHeading";
-import SubmitButton from "./SubmitButton";
+import SectionHeading from "../SectionHeading";
+import SubmitButton from "../SubmitButton";
 import { sendEmail } from "@/actions/sendEmail";
 import toast from "react-hot-toast";
 

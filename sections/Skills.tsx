@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/hooks/useSectionInView";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../SectionHeading";
 import { skillsData } from "@/lib/constants";
 import Image from "next/image";
 

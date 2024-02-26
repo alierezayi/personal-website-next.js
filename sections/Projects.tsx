@@ -1,9 +1,9 @@
 "use client";
 
 import { useSectionInView } from "@/hooks/useSectionInView";
-import SectionHeading from "./SectionHeading";
+import SectionHeading from "../SectionHeading";
 import { projectsData } from "@/lib/constants";
-import Project from "./Project";
+import Project from "../Project";
 import React from "react";
 
 const Projects = () => {
