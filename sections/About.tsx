@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import SectionHeading from "../SectionHeading";
+import SectionHeading from "@/components/SectionHeading";
 import { useSectionInView } from "@/hooks/useSectionInView";
 
 const About = () => {
