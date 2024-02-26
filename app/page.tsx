@@ -1,10 +1,11 @@
-import About from "@/sections/About";
-import Contact from "@/sections/Contact";
-import Experience from "@/sections/Experience";
-import Intro from "@/sections/Intro";
-import Projects from "@/sections/Projects";
-import Skills from "@/sections/Skills";
+import Intro from "@/app/sections/Intro";
 import SectionDivider from "@/components/SectionDivider";
+import About from "@/app/sections/About";
+import Contact from "@/app/sections/Contact";
+import Experience from "@/app/sections/Experience";
+import Projects from "@/app/sections/Projects";
+import Skills from "@/app/sections/Skills";
+
 
 
 export default function Home() {
